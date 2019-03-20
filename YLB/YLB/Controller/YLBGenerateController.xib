@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLBGenerateController">
+            <connections>
+                <outlet property="backBtn" destination="l2i-wW-wiq" id="wu9-LE-Maa"/>
+                <outlet property="textField" destination="w9I-Tj-A05" id="Mkn-lD-X6l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fri_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GYt-fj-bOL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fri_box" translatesAutoresizingMaskIntoConstraints="NO" id="Tq1-x3-h9S">
+                    <rect key="frame" x="15" y="100" width="345" height="482"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="482" id="RYm-fm-2F6"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fri_input" translatesAutoresizingMaskIntoConstraints="NO" id="BSd-6i-mdo">
+                    <rect key="frame" x="43" y="165" width="289" height="88"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEA-XR-St0">
+                    <rect key="frame" x="35" y="355" width="305" height="72"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                    <state key="normal" title="立即生成" backgroundImage="fri_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="synthesisBtn:" destination="-1" eventType="touchUpInside" id="8p0-EL-0NU"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="w9I-Tj-A05">
+                    <rect key="frame" x="43" y="165" width="289" height="88"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友批量生成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Q-aC-KdT">
+                    <rect key="frame" x="132.5" y="40" width="110.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2i-wW-wiq">
+                    <rect key="frame" x="15" y="39.5" width="11" height="22"/>
+                    <state key="normal" image="fri_back_white"/>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="RLX-JY-3sB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w9I-Tj-A05" firstAttribute="top" secondItem="BSd-6i-mdo" secondAttribute="top" id="1du-ep-p7u"/>
+                <constraint firstItem="Tq1-x3-h9S" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="2DI-77-wEk"/>
+                <constraint firstItem="BSd-6i-mdo" firstAttribute="leading" secondItem="Tq1-x3-h9S" secondAttribute="leading" constant="28" id="32A-7F-5sy"/>
+                <constraint firstItem="EEA-XR-St0" firstAttribute="trailing" secondItem="Tq1-x3-h9S" secondAttribute="trailing" constant="-20" id="5vk-DN-K6N"/>
+                <constraint firstItem="BSd-6i-mdo" firstAttribute="top" secondItem="Tq1-x3-h9S" secondAttribute="top" constant="65" id="AWV-09-kb8"/>
+                <constraint firstItem="GYt-fj-bOL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Irk-5t-idY"/>
+                <constraint firstItem="l2i-wW-wiq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="LQr-wM-Nxi"/>
+                <constraint firstItem="GYt-fj-bOL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Zfh-Go-VDA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Tq1-x3-h9S" secondAttribute="trailing" constant="15" id="eGE-te-uv6"/>
+                <constraint firstItem="BSd-6i-mdo" firstAttribute="trailing" secondItem="Tq1-x3-h9S" secondAttribute="trailing" constant="-28" id="fNa-gk-DUb"/>
+                <constraint firstItem="EEA-XR-St0" firstAttribute="leading" secondItem="Tq1-x3-h9S" secondAttribute="leading" constant="20" id="itv-As-jMj"/>
+                <constraint firstItem="w9I-Tj-A05" firstAttribute="trailing" secondItem="BSd-6i-mdo" secondAttribute="trailing" id="kAj-eR-cT8"/>
+                <constraint firstItem="53Q-aC-KdT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kQn-fp-1tW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GYt-fj-bOL" secondAttribute="trailing" id="ldK-Il-e9m"/>
+                <constraint firstItem="Tq1-x3-h9S" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="m5O-EQ-ig6"/>
+                <constraint firstItem="EEA-XR-St0" firstAttribute="bottom" secondItem="Tq1-x3-h9S" secondAttribute="bottom" constant="-155" id="mJi-ot-DnN"/>
+                <constraint firstItem="w9I-Tj-A05" firstAttribute="bottom" secondItem="BSd-6i-mdo" secondAttribute="bottom" id="ng4-79-b6K"/>
+                <constraint firstItem="53Q-aC-KdT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="yeO-GH-Ota"/>
+                <constraint firstItem="53Q-aC-KdT" firstAttribute="centerY" secondItem="l2i-wW-wiq" secondAttribute="centerY" id="zAf-xO-Vpt"/>
+                <constraint firstItem="w9I-Tj-A05" firstAttribute="leading" secondItem="BSd-6i-mdo" secondAttribute="leading" id="zv8-mx-Y9o"/>
+                <constraint firstAttribute="bottom" secondItem="GYt-fj-bOL" secondAttribute="bottom" id="zvS-MQ-YvB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fri_back_white" width="11" height="19"/>
+        <image name="fri_bg" width="375" height="667"/>
+        <image name="fri_box" width="349" height="438"/>
+        <image name="fri_btn" width="317" height="72"/>
+        <image name="fri_input" width="290" height="88"/>
+    </resources>
+</document>

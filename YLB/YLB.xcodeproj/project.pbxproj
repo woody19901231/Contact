@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04365748223F777C007B3700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365747223F777C007B3700 /* AppDelegate.m */; };
+		0436574E223F777C007B3700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0436574C223F777C007B3700 /* Main.storyboard */; };
+		04365750223F777C007B3700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0436574F223F777C007B3700 /* Assets.xcassets */; };
+		04365756223F777C007B3700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365755223F777C007B3700 /* main.m */; };
+		04365763223F77A5007B3700 /* YLBBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436575E223F77A5007B3700 /* YLBBaseController.m */; };
+		04365764223F77A5007B3700 /* YLBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365760223F77A5007B3700 /* YLBNavigationController.m */; };
+		04365769223F792B007B3700 /* YLBGenerateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365767223F792B007B3700 /* YLBGenerateController.m */; };
+		0436576A223F792B007B3700 /* YLBGenerateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04365768223F792B007B3700 /* YLBGenerateController.xib */; };
+		0436576E223F7B52007B3700 /* YLBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436576C223F7B52007B3700 /* YLBMainViewController.m */; };
+		0436576F223F7B52007B3700 /* YLBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436576D223F7B52007B3700 /* YLBMainViewController.xib */; };
+		04365772223F7FD8007B3700 /* YLBMailListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365771223F7FD8007B3700 /* YLBMailListController.m */; };
+		0436579C223F8A5C007B3700 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365791223F8A5C007B3700 /* ContactsViewController.m */; };
+		043657A4223F8A8E007B3700 /* AddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043657A1223F8A8E007B3700 /* AddressBookCell.m */; };
+		043657A5223F8A8E007B3700 /* AddressBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043657A3223F8A8E007B3700 /* AddressBookCell.xib */; };
+		043657A8223F8ADC007B3700 /* FriendInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043657A7223F8ADC007B3700 /* FriendInfoModel.m */; };
+		04365825223F9261007B3700 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04365824223F9261007B3700 /* libc++.tbd */; };
+		0436587322408735007B3700 /* YLBPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436587222408735007B3700 /* YLBPopView.m */; };
+		0436587522408743007B3700 /* YLBPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436587422408743007B3700 /* YLBPopView.xib */; };
+		0436587922409B67007B3700 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436587822409B66007B3700 /* BMChineseSort.m */; };
+		0436587D2240AE4B007B3700 /* UIButton+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436587B2240AE4B007B3700 /* UIButton+HXExtension.m */; };
+		043658802240C001007B3700 /* AddressBookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436587F2240C001007B3700 /* AddressBookUtil.m */; };
+		043658832240CBC8007B3700 /* YLBBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043658822240CBC8007B3700 /* YLBBottomView.m */; };
+		043658852240CBDB007B3700 /* YLBBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043658842240CBDB007B3700 /* YLBBottomView.xib */; };
+		043658E522410EED007B3700 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 043658E422410EED007B3700 /* NSString+Extension.m */; };
+		043658E82241CE4C007B3700 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 043658E72241CE4C007B3700 /* Util.m */; };
+		8B426D9F1B212938AB7A3420 /* libPods-YLB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA1E65667075B162B22B4E /* libPods-YLB.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04365743223F777C007B3700 /* YLB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04365746223F777C007B3700 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04365747223F777C007B3700 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0436574D223F777C007B3700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0436574F223F777C007B3700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04365754223F777C007B3700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04365755223F777C007B3700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0436575D223F77A5007B3700 /* YLBBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBBaseController.h; sourceTree = "<group>"; };
+		0436575E223F77A5007B3700 /* YLBBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBBaseController.m; sourceTree = "<group>"; };
+		0436575F223F77A5007B3700 /* YLBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBNavigationController.h; sourceTree = "<group>"; };
+		04365760223F77A5007B3700 /* YLBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBNavigationController.m; sourceTree = "<group>"; };
+		04365765223F77C1007B3700 /* YLB.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLB.pch; sourceTree = "<group>"; };
+		04365766223F792B007B3700 /* YLBGenerateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBGenerateController.h; sourceTree = "<group>"; };
+		04365767223F792B007B3700 /* YLBGenerateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBGenerateController.m; sourceTree = "<group>"; };
+		04365768223F792B007B3700 /* YLBGenerateController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBGenerateController.xib; sourceTree = "<group>"; };
+		0436576B223F7B52007B3700 /* YLBMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBMainViewController.h; sourceTree = "<group>"; };
+		0436576C223F7B52007B3700 /* YLBMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBMainViewController.m; sourceTree = "<group>"; };
+		0436576D223F7B52007B3700 /* YLBMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBMainViewController.xib; sourceTree = "<group>"; };
+		04365770223F7FD8007B3700 /* YLBMailListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBMailListController.h; sourceTree = "<group>"; };
+		04365771223F7FD8007B3700 /* YLBMailListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBMailListController.m; sourceTree = "<group>"; };
+		04365790223F8A5C007B3700 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		04365791223F8A5C007B3700 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		043657A1223F8A8E007B3700 /* AddressBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookCell.m; sourceTree = "<group>"; };
+		043657A2223F8A8E007B3700 /* AddressBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookCell.h; sourceTree = "<group>"; };
+		043657A3223F8A8E007B3700 /* AddressBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBookCell.xib; sourceTree = "<group>"; };
+		043657A6223F8ADC007B3700 /* FriendInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfoModel.h; sourceTree = "<group>"; };
+		043657A7223F8ADC007B3700 /* FriendInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfoModel.m; sourceTree = "<group>"; };
+		04365824223F9261007B3700 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0436587122408735007B3700 /* YLBPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBPopView.h; sourceTree = "<group>"; };
+		0436587222408735007B3700 /* YLBPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBPopView.m; sourceTree = "<group>"; };
+		0436587422408743007B3700 /* YLBPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBPopView.xib; sourceTree = "<group>"; };
+		0436587722409B66007B3700 /* BMChineseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChineseSort.h; sourceTree = "<group>"; };
+		0436587822409B66007B3700 /* BMChineseSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChineseSort.m; sourceTree = "<group>"; };
+		0436587B2240AE4B007B3700 /* UIButton+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HXExtension.m"; sourceTree = "<group>"; };
+		0436587C2240AE4B007B3700 /* UIButton+HXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HXExtension.h"; sourceTree = "<group>"; };
+		0436587E2240C001007B3700 /* AddressBookUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookUtil.h; sourceTree = "<group>"; };
+		0436587F2240C001007B3700 /* AddressBookUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookUtil.m; sourceTree = "<group>"; };
+		043658812240CBC8007B3700 /* YLBBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBBottomView.h; sourceTree = "<group>"; };
+		043658822240CBC8007B3700 /* YLBBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBBottomView.m; sourceTree = "<group>"; };
+		043658842240CBDB007B3700 /* YLBBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBBottomView.xib; sourceTree = "<group>"; };
+		043658E322410EE7007B3700 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		043658E422410EED007B3700 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		043658E62241CE4C007B3700 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		043658E72241CE4C007B3700 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		26FA1E65667075B162B22B4E /* libPods-YLB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8838D1E39D4FC6AA76C55524 /* Pods-YLB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLB/Pods-YLB.debug.xcconfig"; sourceTree = "<group>"; };
+		AC58F1F71719B738EB416C33 /* Pods-YLB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLB.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLB/Pods-YLB.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04365740223F777C007B3700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04365825223F9261007B3700 /* libc++.tbd in Frameworks */,
+				8B426D9F1B212938AB7A3420 /* libPods-YLB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0436573A223F777C007B3700 = {
+			isa = PBXGroup;
+			children = (
+				04365745223F777C007B3700 /* YLB */,
+				04365744223F777C007B3700 /* Products */,
+				04365823223F9260007B3700 /* Frameworks */,
+				87D492B94D6DA3B7370781E5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		04365744223F777C007B3700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04365743223F777C007B3700 /* YLB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04365745223F777C007B3700 /* YLB */ = {
+			isa = PBXGroup;
+			children = (
+				0436587A2240ADB0007B3700 /* Util */,
+				043657A9223F8B08007B3700 /* BaseViewController */,
+				0436575C223F77A5007B3700 /* Controller */,
+				04365762223F77A5007B3700 /* Model */,
+				04365761223F77A5007B3700 /* View */,
+				0436578F223F8A5C007B3700 /* AddressBook */,
+				043657B0223F8BC9007B3700 /* Other */,
+				043657B1223F8BC9007B3700 /* ThirdLib */,
+				04365746223F777C007B3700 /* AppDelegate.h */,
+				04365747223F777C007B3700 /* AppDelegate.m */,
+				04365754223F777C007B3700 /* Info.plist */,
+				04365755223F777C007B3700 /* main.m */,
+				04365765223F77C1007B3700 /* YLB.pch */,
+				0436574F223F777C007B3700 /* Assets.xcassets */,
+			);
+			path = YLB;
+			sourceTree = "<group>";
+		};
+		0436575C223F77A5007B3700 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0436576B223F7B52007B3700 /* YLBMainViewController.h */,
+				0436576C223F7B52007B3700 /* YLBMainViewController.m */,
+				0436576D223F7B52007B3700 /* YLBMainViewController.xib */,
+				04365766223F792B007B3700 /* YLBGenerateController.h */,
+				04365767223F792B007B3700 /* YLBGenerateController.m */,
+				04365768223F792B007B3700 /* YLBGenerateController.xib */,
+				04365770223F7FD8007B3700 /* YLBMailListController.h */,
+				04365771223F7FD8007B3700 /* YLBMailListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04365761223F77A5007B3700 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043657A2223F8A8E007B3700 /* AddressBookCell.h */,
+				043657A1223F8A8E007B3700 /* AddressBookCell.m */,
+				043657A3223F8A8E007B3700 /* AddressBookCell.xib */,
+				0436587122408735007B3700 /* YLBPopView.h */,
+				0436587222408735007B3700 /* YLBPopView.m */,
+				0436587422408743007B3700 /* YLBPopView.xib */,
+				043658812240CBC8007B3700 /* YLBBottomView.h */,
+				043658822240CBC8007B3700 /* YLBBottomView.m */,
+				043658842240CBDB007B3700 /* YLBBottomView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04365762223F77A5007B3700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043657A6223F8ADC007B3700 /* FriendInfoModel.h */,
+				043657A7223F8ADC007B3700 /* FriendInfoModel.m */,
+				0436587E2240C001007B3700 /* AddressBookUtil.h */,
+				0436587F2240C001007B3700 /* AddressBookUtil.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0436578F223F8A5C007B3700 /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				04365790223F8A5C007B3700 /* ContactsViewController.h */,
+				04365791223F8A5C007B3700 /* ContactsViewController.m */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		043657A9223F8B08007B3700 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0436575D223F77A5007B3700 /* YLBBaseController.h */,
+				0436575E223F77A5007B3700 /* YLBBaseController.m */,
+				0436575F223F77A5007B3700 /* YLBNavigationController.h */,
+				04365760223F77A5007B3700 /* YLBNavigationController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		043657B0223F8BC9007B3700 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0436574C223F777C007B3700 /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		043657B1223F8BC9007B3700 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				0436587622409B66007B3700 /* BMChineseStringSort */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		04365823223F9260007B3700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04365824223F9261007B3700 /* libc++.tbd */,
+				26FA1E65667075B162B22B4E /* libPods-YLB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0436587622409B66007B3700 /* BMChineseStringSort */ = {
+			isa = PBXGroup;
+			children = (
+				0436587722409B66007B3700 /* BMChineseSort.h */,
+				0436587822409B66007B3700 /* BMChineseSort.m */,
+			);
+			path = BMChineseStringSort;
+			sourceTree = "<group>";
+		};
+		0436587A2240ADB0007B3700 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0436587C2240AE4B007B3700 /* UIButton+HXExtension.h */,
+				0436587B2240AE4B007B3700 /* UIButton+HXExtension.m */,
+				043658E322410EE7007B3700 /* NSString+Extension.h */,
+				043658E422410EED007B3700 /* NSString+Extension.m */,
+				043658E62241CE4C007B3700 /* Util.h */,
+				043658E72241CE4C007B3700 /* Util.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		87D492B94D6DA3B7370781E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8838D1E39D4FC6AA76C55524 /* Pods-YLB.debug.xcconfig */,
+				AC58F1F71719B738EB416C33 /* Pods-YLB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04365742223F777C007B3700 /* YLB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04365759223F777C007B3700 /* Build configuration list for PBXNativeTarget "YLB" */;
+			buildPhases = (
+				6786E909A3E04AB618C37EA3 /* [CP] Check Pods Manifest.lock */,
+				0436573F223F777C007B3700 /* Sources */,
+				04365740223F777C007B3700 /* Frameworks */,
+				04365741223F777C007B3700 /* Resources */,
+				90E150B8F40417B8A2027805 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLB;
+			productName = YLB;
+			productReference = 04365743223F777C007B3700 /* YLB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0436573B223F777C007B3700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = goulala;
+				TargetAttributes = {
+					04365742223F777C007B3700 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0436573E223F777C007B3700 /* Build configuration list for PBXProject "YLB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0436573A223F777C007B3700;
+			productRefGroup = 04365744223F777C007B3700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04365742223F777C007B3700 /* YLB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04365741223F777C007B3700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0436576A223F792B007B3700 /* YLBGenerateController.xib in Resources */,
+				043657A5223F8A8E007B3700 /* AddressBookCell.xib in Resources */,
+				0436576F223F7B52007B3700 /* YLBMainViewController.xib in Resources */,
+				0436587522408743007B3700 /* YLBPopView.xib in Resources */,
+				043658852240CBDB007B3700 /* YLBBottomView.xib in Resources */,
+				04365750223F777C007B3700 /* Assets.xcassets in Resources */,
+				0436574E223F777C007B3700 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6786E909A3E04AB618C37EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E150B8F40417B8A2027805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLB/Pods-YLB-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLB/Pods-YLB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0436573F223F777C007B3700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043658E82241CE4C007B3700 /* Util.m in Sources */,
+				0436587D2240AE4B007B3700 /* UIButton+HXExtension.m in Sources */,
+				04365769223F792B007B3700 /* YLBGenerateController.m in Sources */,
+				04365756223F777C007B3700 /* main.m in Sources */,
+				04365764223F77A5007B3700 /* YLBNavigationController.m in Sources */,
+				04365772223F7FD8007B3700 /* YLBMailListController.m in Sources */,
+				043658E522410EED007B3700 /* NSString+Extension.m in Sources */,
+				043658832240CBC8007B3700 /* YLBBottomView.m in Sources */,
+				0436576E223F7B52007B3700 /* YLBMainViewController.m in Sources */,
+				0436587322408735007B3700 /* YLBPopView.m in Sources */,
+				04365763223F77A5007B3700 /* YLBBaseController.m in Sources */,
+				0436579C223F8A5C007B3700 /* ContactsViewController.m in Sources */,
+				043657A4223F8A8E007B3700 /* AddressBookCell.m in Sources */,
+				043658802240C001007B3700 /* AddressBookUtil.m in Sources */,
+				04365748223F777C007B3700 /* AppDelegate.m in Sources */,
+				043657A8223F8ADC007B3700 /* FriendInfoModel.m in Sources */,
+				0436587922409B67007B3700 /* BMChineseSort.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0436574C223F777C007B3700 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0436574D223F777C007B3700 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04365757223F777C007B3700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04365758223F777C007B3700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0436575A223F777C007B3700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8838D1E39D4FC6AA76C55524 /* Pods-YLB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7DN8DPAJ3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLB/YLB.pch";
+				INFOPLIST_FILE = YLB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zygl.YLB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0436575B223F777C007B3700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC58F1F71719B738EB416C33 /* Pods-YLB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7DN8DPAJ3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLB/YLB.pch";
+				INFOPLIST_FILE = YLB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zygl.YLB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0436573E223F777C007B3700 /* Build configuration list for PBXProject "YLB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04365757223F777C007B3700 /* Debug */,
+				04365758223F777C007B3700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04365759223F777C007B3700 /* Build configuration list for PBXNativeTarget "YLB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0436575A223F777C007B3700 /* Debug */,
+				0436575B223F777C007B3700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0436573B223F777C007B3700 /* Project object */;
+}

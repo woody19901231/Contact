@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YLBPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o25-f8-yFQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pM0-9n-fUQ">
+                    <rect key="frame" x="40" y="158" width="295" height="351"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_meun" translatesAutoresizingMaskIntoConstraints="NO" id="8en-Kl-9I9">
+                            <rect key="frame" x="30" y="0.0" width="235" height="351"/>
+                        </imageView>
+                        <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-HW-Qp8">
+                            <rect key="frame" x="127.5" y="311" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="7Y6-5T-xd9"/>
+                                <constraint firstAttribute="height" constant="40" id="ZEw-p9-Qah"/>
+                            </constraints>
+                            <connections>
+                                <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="vAy-kv-h9B"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xZ-ye-U5n">
+                            <rect key="frame" x="107.5" y="201" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="XFg-zb-HT1"/>
+                            </constraints>
+                            <connections>
+                                <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="PsL-gf-VRi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="h8b-HW-Qp8" firstAttribute="top" secondItem="6xZ-ye-U5n" secondAttribute="bottom" constant="80" id="1cg-6m-QI9"/>
+                        <constraint firstItem="h8b-HW-Qp8" firstAttribute="centerX" secondItem="pM0-9n-fUQ" secondAttribute="centerX" id="BZL-Mx-RCk"/>
+                        <constraint firstItem="8en-Kl-9I9" firstAttribute="top" secondItem="pM0-9n-fUQ" secondAttribute="top" id="FaW-pn-zOl"/>
+                        <constraint firstItem="8en-Kl-9I9" firstAttribute="centerY" secondItem="pM0-9n-fUQ" secondAttribute="centerY" id="VzA-DD-cMs"/>
+                        <constraint firstItem="6xZ-ye-U5n" firstAttribute="centerX" secondItem="pM0-9n-fUQ" secondAttribute="centerX" id="gcf-6p-47d"/>
+                        <constraint firstItem="8en-Kl-9I9" firstAttribute="centerX" secondItem="pM0-9n-fUQ" secondAttribute="centerX" id="hca-so-eAs"/>
+                        <constraint firstAttribute="bottom" secondItem="h8b-HW-Qp8" secondAttribute="bottom" id="iXk-se-REQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pM0-9n-fUQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-40" id="Cg2-hs-4jy"/>
+                <constraint firstItem="o25-f8-yFQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="PXr-Qy-zdf"/>
+                <constraint firstItem="pM0-9n-fUQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T3Z-fB-ngh"/>
+                <constraint firstItem="o25-f8-yFQ" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="dmj-xO-5gm"/>
+                <constraint firstItem="o25-f8-yFQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eF1-1N-ddf"/>
+                <constraint firstItem="pM0-9n-fUQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="jq3-kg-eOD"/>
+                <constraint firstItem="pM0-9n-fUQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k2l-Hx-fbH"/>
+                <constraint firstItem="o25-f8-yFQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nbH-er-cNh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentView" destination="pM0-9n-fUQ" id="bmV-rc-ifw"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pop_meun" width="235" height="351"/>
+    </resources>
+</document>
